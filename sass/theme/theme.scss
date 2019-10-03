@@ -23,13 +23,16 @@
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0 auto;
+    padding: .5em 0;
 }
 
-.block-metrotheme-branding{
+.bloque_branding__logo{
     text-align: center;
-    padding: 2em;
+    padding: 1em;
+    width: 70%;
+    max-width: 240px;
+    margin: 0 auto;
 }
-
 
 .grid-col-5{
     display: grid;

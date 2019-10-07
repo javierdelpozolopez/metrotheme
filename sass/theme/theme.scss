@@ -8,10 +8,6 @@
 // while also maintaining Drupals SMACSS structure.
 // @import "theme/theme--light"
 
-.layout-container{
-    margin-bottom: 5em;
-}
-
 .header-container{
     background-color: white;
     margin: 0 auto;
@@ -25,7 +21,11 @@
     margin: 0 auto;
     padding: .5em 0;
 }
-
+.main__content div{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
 .bloque_branding__logo{
     text-align: center;
     padding: 1em;
@@ -36,17 +36,22 @@
 
 .grid-col-5{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-gap: 2px;
     @media only screen and (max-width: 720px){
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
     @media only screen and (max-width: 480px){
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
+
+.feed__content{
+    max-width: 600px;
+    margin: 0 auto;
+}
 .act-bottom-nav__container{
     position: fixed;
     bottom: 0;
